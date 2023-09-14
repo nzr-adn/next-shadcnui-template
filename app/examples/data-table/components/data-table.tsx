@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ChevronDownIcon, TrashIcon } from "@radix-ui/react-icons";
+import { ChevronDownIcon, Pencil2Icon, TrashIcon } from "@radix-ui/react-icons";
 import {
   ColumnFiltersState,
   SortingState,
@@ -34,6 +34,7 @@ import {
 } from "@/components/ui/table";
 
 import { columns, data } from "./columns";
+import { CreateForm } from "./create-form";
 
 export function DataTable(props: { title: string }) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
@@ -80,7 +81,9 @@ export function DataTable(props: { title: string }) {
             <TrashIcon className="mr-2 h-4 w-4" /> Mark all as delete
           </Button>
         </nav>
-        <Button className="ml-auto">Create Item</Button>
+        <div className="ml-auto">
+          <CreateForm />
+        </div>
       </div>
       <div className="flex items-center py-2">
         <Input
