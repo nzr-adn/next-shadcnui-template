@@ -6,6 +6,8 @@ import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
 
+import { MainMenu } from "./MainMenu"
+
 interface MainNavProps {
   items?: NavItem[]
 }
@@ -17,7 +19,7 @@ export function MainNav({ items }: MainNavProps) {
         <Icons.logo className="h-6 w-6" />
         <span className="inline-block font-bold">{siteConfig.name}</span>
       </Link>
-      {items?.length ? (
+      {/* {items?.length ? (
         <nav className="flex gap-6">
           {items?.map(
             (item, index) =>
@@ -35,7 +37,8 @@ export function MainNav({ items }: MainNavProps) {
               )
           )}
         </nav>
-      ) : null}
+      ) : null} */}
+      <MainMenu />
     </div>
   )
 }
