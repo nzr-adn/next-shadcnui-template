@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { Icons } from "@/components/icons";
 
 import { MainMenu } from "./MainMenu";
+import { MenuNavigation } from "./MenuNavigation";
 
 interface MainNavProps {
   items?: NavItem[];
@@ -15,6 +16,7 @@ interface MainNavProps {
 export function MainNav({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
+      <MenuNavigation />
       <Link href="/" className="flex items-center space-x-2">
         <Icons.logo className="h-6 w-6" />
         <span className="inline-block font-bold">{siteConfig.name}</span>
