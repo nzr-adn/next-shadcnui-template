@@ -31,6 +31,11 @@ const components: { title: string; href: string; description: string }[] = [
     href: "/examples/dashboard",
     description: "Example Dashboard Page",
   },
+  {
+    title: "Learn UseState & UseEffect",
+    href: "/examples/learn-hook",
+    description: "Learn UseState & UseEffect",
+  },
 ];
 
 export function MainMenu() {
