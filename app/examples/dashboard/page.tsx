@@ -1,20 +1,10 @@
 import { Metadata } from "next";
 
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import Dashboard from "./components/dashboard";
 import { CalendarDateRangePicker } from "./components/date-picker-range";
 import { MainNav } from "./components/main-nav";
-import { Overview } from "./components/overview";
-import { RecentSales } from "./components/recent-sales";
 import { Search } from "./components/search";
 import TeamSwitcher from "./components/team-switcher";
 import { UserNav } from "./components/user-nav";

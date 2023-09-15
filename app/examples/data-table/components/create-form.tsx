@@ -17,7 +17,7 @@ export function CreateForm() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button rounded-full>
+        <Button rounded-full="true">
           <Pencil2Icon />
         </Button>
       </DialogTrigger>
