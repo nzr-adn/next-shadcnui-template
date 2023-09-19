@@ -41,6 +41,11 @@ const components: { title: string; href: string; description: string }[] = [
     href: "/examples/data-table",
     description: "Learn UseState & UseEffect",
   },
+  {
+    title: "Supabase",
+    href: "/examples/countries",
+    description: "Learn UseState & UseEffect",
+  },
 ];
 
 export function MainMenu() {
